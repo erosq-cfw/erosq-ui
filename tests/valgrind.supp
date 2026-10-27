@@ -1,0 +1,61 @@
+# Valgrind memcheck suppressions for the host SDL build of erosq-ui.
+#
+# These quash one-time allocations inside third-party libraries (SDL, GLib/GIO,
+# fontconfig, the dynamic loader, Mesa) that Valgrind reports as leaked because
+# the library never frees them before exit. They are NOT erosq-ui bugs.
+#
+# Keep this list tight: it is scoped by library object so it can never hide a
+# leak in our own code. If a new noise source appears, regenerate a stub with
+#     valgrind --gen-suppressions=all ... build-host/erosq-ui
+# and paste the library-scoped block here (not a whole-stack one that could
+# mask our frames).
+
+{
+   sdl2-one-time-init
+   Memcheck:Leak
+   match-leak-kinds: reachable,possible,definite
+   ...
+   obj:*/libSDL2*
+}
+{
+   glib-type-registration
+   Memcheck:Leak
+   match-leak-kinds: reachable,possible,definite
+   ...
+   obj:*/libglib-2.0.so*
+}
+{
+   gio-one-time-init
+   Memcheck:Leak
+   match-leak-kinds: reachable,possible,definite
+   ...
+   obj:*/libgio-2.0.so*
+}
+{
+   gobject-one-time-init
+   Memcheck:Leak
+   match-leak-kinds: reachable,possible,definite
+   ...
+   obj:*/libgobject-2.0.so*
+}
+{
+   fontconfig-cache
+   Memcheck:Leak
+   match-leak-kinds: reachable,possible,definite
+   ...
+   obj:*/libfontconfig*
+}
+{
+   dl-init-allocs
+   Memcheck:Leak
+   match-leak-kinds: reachable,possible
+   ...
+   obj:*/ld-*.so*
+}
+{
+   mesa-driver-init
+   Memcheck:Leak
+   match-leak-kinds: reachable,possible,definite
+   ...
+   obj:*/libGL*
+}

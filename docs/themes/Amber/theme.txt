@@ -1,0 +1,5 @@
+# Amber: amber on charcoal, like an old terminal. Format: THEMES.md
+background     = #101820
+text           = #f2aa4c
+selection      = #f2aa4c
+selection_text = #101820

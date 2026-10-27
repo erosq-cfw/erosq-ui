@@ -1,0 +1,7 @@
+# Paper: warm paper with faint ruled lines, red selection. Format: THEMES.md
+# The backdrop is flat rows plus thin lines, so it draws as cheap fills.
+background     = #f5f0e4
+text           = #3a3226
+selection      = #c0392b
+selection_text = #ffffff
+backdrop       = backdrop.bmp

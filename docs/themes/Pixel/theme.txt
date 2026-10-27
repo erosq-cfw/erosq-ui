@@ -1,0 +1,16 @@
+# Pixel: pixel font, clock and date in a side panel. Format: THEMES.md
+# Font: Pixel Operator by Jayvee Enaguas (HarvettFox96), CC0 1.0
+# (PixelOperator-LICENSE.txt; tools/fonts/pixeloperator.sh).
+background     = #1a1c2c
+text           = #f4f4f4
+selection      = #41a6f6
+selection_text = #1a1c2c
+titlebar       = #1a1c2c
+titlebar_text  = #f4f4f4
+titlebar_line  = #41a6f6
+layout         = panel
+panel_width    = 100
+font           = PixelOperator16.bin
+font_bold      = PixelOperator16-Bold.bin
+row_height     = 27
+row_dividers   = off

@@ -1,0 +1,8 @@
+lvgl/
+build/
+build-host/
+libdrm/
+*.o
+/build/erosq-ui
+/build-host/erosq-ui
+tinyalsa/

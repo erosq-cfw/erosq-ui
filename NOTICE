@@ -1,0 +1,36 @@
+Third-party components
+======================
+
+The code in this repository is MIT-licensed (see LICENSE), except for the
+files listed below, which keep their own licences.
+
+src/tjpgd/
+    TJpgDec R0.03, (C) ChaN. BSD-style licence: src/tjpgd/LICENSE.txt.
+
+fonts/lv_font_ipod_14.c, fonts/lv_font_ipod_14b.c, fonts/lv_font_ipod_18b.c
+    Bitmap conversions (lv_font_conv) of Helvetica-metric sans faces from the
+    Liberation Sans / Arimo family (gen-fonts.sh):
+      - Liberation Sans: Copyright (c) 2012 Red Hat, Inc., with Reserved Font
+        Name Liberation; digitized data Copyright (c) 2010 Google Corporation,
+        with Reserved Font Names Arimo, Tinos and Cousine.
+        SIL Open Font License 1.1: LICENSES/OFL-1.1.txt.
+      - Arimo: Copyright (c) 2010 Google Corporation. Apache License 2.0
+        (LICENSES/Apache-2.0.txt) or SIL OFL 1.1, depending on release.
+    As derivatives of OFL fonts these files are distributed under the OFL 1.1,
+    not under the MIT licence.
+
+fonts/lv_font_ipod_14.c (symbol range), fonts/lv_font_ipod_icon40.c
+    Glyphs from Font Awesome 5 Free (https://fontawesome.com), as bundled
+    with LVGL. Font: SIL OFL 1.1 (LICENSES/OFL-1.1.txt). Icons: CC BY 4.0
+    (https://creativecommons.org/licenses/by/4.0/). Font Awesome by
+    Fonticons, Inc.
+
+docs/themes/Pixel/*.bin
+    Pixel Operator by Jayvee Enaguas, CC0 1.0:
+    docs/themes/Pixel/PixelOperator-LICENSE.txt. The 16 px regular x/X and
+    s/S glyphs (and bold s/S) are hand-edited (tools/fonts/pixelfix.py,
+    tools/fonts/pixeloperator-fixes.txt); those edits are also CC0 1.0.
+
+patches/lv_linux_drm-drm-master-handoff.patch, lv_conf.h
+    Modify / configure LVGL (https://lvgl.io), MIT licence. LVGL itself is not
+    vendored here.

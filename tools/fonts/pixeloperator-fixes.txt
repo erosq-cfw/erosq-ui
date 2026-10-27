@@ -1,0 +1,67 @@
+; Hand-corrected Pixel Operator 16 px glyphs (pixelfix.py). Pixel Operator is
+; CC0 1.0, so edits are fine. Same box as the original glyph.
+; x: the original's doubled top/bottom rows made a blocky "8"-like shape;
+; now one diagonal step per row (regular only: the 2 px bold strokes read
+; better as drawn). s/S: no spur on the top right / bottom left.
+
+regular x
+#...#
+.#.#.
+.#.#.
+..#..
+.#.#.
+.#.#.
+#...#
+
+regular X
+#...#
+#...#
+.#.#.
+.#.#.
+..#..
+.#.#.
+.#.#.
+#...#
+#...#
+
+regular s
+.####
+#....
+#....
+.###.
+....#
+....#
+####.
+
+regular S
+.####
+#....
+#....
+#....
+.###.
+....#
+....#
+....#
+####.
+
+
+
+bold s
+.#####
+##....
+##....
+.####.
+....##
+....##
+#####.
+
+bold S
+.#####
+##....
+##....
+##....
+.####.
+....##
+....##
+....##
+#####.

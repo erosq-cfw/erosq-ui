@@ -1,0 +1,8 @@
+# Dusk -- example erosq theme. Copy this folder to <SD card>/themes/Dusk/
+# and pick it in Settings > Display > Theme. Format: THEMES.md.
+background     = #1d2021
+text           = #ebdbb2
+selection      = #d79921
+selection_end  = #b57614
+selection_text = #1d2021
+# backdrop     = backdrop.bmp

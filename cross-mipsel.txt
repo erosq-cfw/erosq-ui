@@ -1,0 +1,11 @@
+[binaries]
+c = 'mipsel-buildroot-linux-musl-gcc'
+ar = 'mipsel-buildroot-linux-musl-ar'
+strip = 'mipsel-buildroot-linux-musl-strip'
+pkg-config = 'pkg-config'
+
+[host_machine]
+system = 'linux'
+cpu_family = 'mips'
+cpu = 'mips32'
+endian = 'little'

@@ -1,0 +1,6 @@
+# Midnight: dark blue, gradient selection. Format: THEMES.md
+background     = #000000
+text           = #e0e6f0
+selection      = #3fa9f5
+selection_end  = #1b5e9e
+selection_text = #ffffff
